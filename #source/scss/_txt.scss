@@ -1,0 +1,45 @@
+.text_18 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #252525;
+  line-height: normal;
+}
+.text_16 {
+  font-size: 16px;
+  line-height: 120%;
+}
+.title_20 {
+  font-size: 20px;
+  font-weight: 500;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+.section-title {
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 40px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 32px;
+  }
+  &::before {
+    content: "";
+    width: 5px;
+    height: 90%;
+    background-color: var(--accent-color1);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+
+    &::before {
+      width: 4px;
+    }
+  }
+}

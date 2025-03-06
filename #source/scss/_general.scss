@@ -1,0 +1,155 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  &.lock {
+    overflow: hidden;
+  }
+}
+body {
+  font-family: "e-Ukraine", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fff;
+  min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  &.lock {
+    overflow: hidden;
+  }
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: inherit;
+}
+img {
+  display: block;
+}
+.container {
+  max-width: 1424px;
+  width: 100%;
+  padding: 0px 56px;
+  margin: 0 auto;
+  @media screen and (max-width: 1024px) {
+    padding: 0px 32px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0px 16px;
+  }
+}
+
+section {
+  padding: 80px 0;
+  @media screen and (max-width: 1024px) {
+    padding: 60px 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 48px 0;
+  }
+}
+
+.btn {
+  background-color: #000000;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 24px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  transition: all 0.1s linear;
+  border: 1px solid #111827;
+  cursor: pointer;
+  path {
+    transition: all 0.1s linear;
+  }
+  &:hover {
+    background-color: #fff;
+    color: #111827;
+
+    path {
+      stroke: #111827;
+    }
+  }
+  &.white {
+    background-color: #fff;
+    color: #111827;
+    border: 1px solid #fff;
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+  &.clear {
+    background-color: transparent;
+    color: #111827;
+    border: 1px solid #111827;
+    font-weight: 600;
+    &:hover {
+      background-color: 111827;
+      color: #fff;
+
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+}
+.slider-navigation {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
+  .prev,
+  .next {
+    width: 50px;
+    height: 45px;
+    background-color: #ffffff00;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: all 0.1s linear;
+    &:hover {
+      border: 1px solid #000000;
+    }
+  }
+  .next {
+  }
+}
