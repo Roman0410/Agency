@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "e-Ukraine";
-  src: url("../../fonts/e-Ukraine/e-Ukraine-Bold.woff2") format("woff2"), url("../../fonts/e-Ukraine/e-Ukraine-Bold.woff") format("woff");
+  src: url("../fonts/e-Ukraine/e-Ukraine-Bold.woff2") format("woff2"), url("../fonts/e-Ukraine/e-Ukraine-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
