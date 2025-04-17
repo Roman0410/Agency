@@ -3,8 +3,7 @@ Fancybox.bind("[data-fancybox]", {
     showOnStart: false,
   },
 });
-
-$(".copyright-year").text(new Date().getFullYear());
++$(".copyright-year").text(new Date().getFullYear());
 
 $(".burger-menu").click(function () {
   $(this).toggleClass("active");
@@ -19,15 +18,28 @@ $(".header .search_btn").click(function () {
     .find(".search_results-list")
     .removeClass("active");
 });
-$(".cart-wrapper .close").click(function () {
-  $(".cart-wrapper").toggleClass("active");
-  $("body").toggleClass("lock");
-});
 
 $(".search-banner .close").click(function () {
   $(".search-banner").removeClass("open");
 });
 
+$(document).ready(function () {
+  $(".filter-item").on("click", function () {
+    let filter = $(this).data("filter");
+
+    // Підсвічування активного фільтра
+    $(".filter-item").removeClass("open");
+    $(this).addClass("open");
+
+    // Фільтрація елементів
+    if (filter === "all") {
+      $(".news-item").show();
+    } else {
+      $(".news-item").hide();
+      $('.news-item[data-filter="' + filter + '"]').show();
+    }
+  });
+});
 //-----------------------SLIDERS-----------------------//
 $(".gallery-list").slick({
   slidesToShow: 3,

@@ -40,26 +40,45 @@
         <div class="header-container">
           <div class="left">
             <a href="index.html" class="header-logo">
-              Агенція <br />
-              Cправедливої <br />
-              Трансформації
+              <img src="./img/logo.svg" alt="" />
             </a>
             <nav class="header-nav">
               <ul class="nav-list">
-                <li class="nav-item ≈">
+                <li class="nav-item">
                   <a href="index.html" class="nav-link">Головна</a>
                 </li>
+                <li class="nav-item">
+                  <div href="activity.html" class="nav-link">
+                    Діяльність <img src="./img/drop_arrow.svg" alt="" />
+                  </div>
+                  <ul class="sub-menu">
+                    <li class="sub-item">
+                      <a href="events.html" class="sub-link">Події </a>
+                    </li>
+                    <li class="sub-item">
+                      <a href="community.html" class="sub-link"
+                        >Шептицька громада на шляху Справедливої
+                        трансформації</a
+                      >
+                    </li>
+                    <li class="sub-item">
+                      <a href="projects.html" class="sub-link"
+                        >Локальні та міжнародні проєкти
+                      </a>
+                    </li>
+                  </ul>
+                </li>
                 <li class="nav-item current">
-                  <a href="catalog.html" class="nav-link">Діяльність</a>
+                  <a href="partners.html" class="nav-link">Партнерам</a>
                 </li>
                 <li class="nav-item">
-                  <a href="about.html" class="nav-link">Партнери</a>
+                  <a href="team.html" class="nav-link">Команда</a>
                 </li>
                 <li class="nav-item">
-                  <a href="about.html" class="nav-link">Новини</a>
+                  <a href="news.html" class="nav-link">Новини</a>
                 </li>
                 <li class="nav-item">
-                  <a href="about.html" class="nav-link">Контакти</a>
+                  <a href="contacts.html" class="nav-link">Контакти</a>
                 </li>
               </ul>
               <div class="mobile-bottom">
@@ -86,62 +105,222 @@
         </div>
       </div>
     </header>
-    <footer class="footer">
+    <section class="contactUs">
       <div class="container">
         <div class="wrapper">
-          <div class="col">
-            <a href="index.html" class="logo">
-              Агенція <br />
-              Cправедливої <br />
-              Трансформації
-            </a>
-          </div>
-          <div class="col">
-            <p class="title_18">Контакти</p>
-            <div class="contact-list list">
-              <a href="tel:7987654654" class="contact-item"
-                ><img src="./img/phone.svg" alt="" /> +38 (011) 111-11-11</a
-              >
-              <a href="mailto:test@test.com" class="contact-item"
-                ><img src="./img/mail.svg" alt="" /> test@test.com</a
-              >
-              <a href="#" class="contact-item"
-                ><img src="./img/pin.svg" alt="" />79008, Україна, місто
-                Львів</a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <p class="title_18">Навігація</p>
-            <div class="footer-nav list">
-              <a href="index.html" class="footer-nav_link">Головна</a
-              ><a href="activity.html" class="footer-nav_link">Діяльність</a
-              ><a href="partners.html" class="footer-nav_link">Партнери</a
-              ><a href="news.html" class="footer-nav_link">Новини</a>
-              <a href="contacts.html" class="footer-nav_link">Контакти</a>
-            </div>
-          </div>
-          <div class="col">
-            <p class="title_18">Соціальні мережі</p>
-            <div class="soc-list">
-              <a href="#" class="soc-item">
-                <img src="./img/facebook.svg" alt="" />
-              </a>
-              <a href="#" class="soc-item">
-                <img src="./img/tiktok.svg" alt="" />
-              </a>
-              <a href="#" class="soc-item">
-                <img src="./img/instagram.svg" alt="" />
-              </a>
-            </div>
+          <div
+            class="img-card"
+            style="background-image: url(./img/hero-img.webp)"
+          ></div>
+          <div class="form-wrapper">
+            <h2 class="section-title">Зв’яжіться з нами</h2>
+            <form action="" class="contactForm" id="main-form">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  placeholder="Ім'я"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M13.3327 14V12.6667C13.3327 11.9594 13.0517 11.2811 12.5516 10.781C12.0515 10.281 11.3733 10 10.666 10H5.33268C4.62544 10 3.94716 10.281 3.44706 10.781C2.94697 11.2811 2.66602 11.9594 2.66602 12.6667V14"
+                    stroke="#E5E7EB"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.00065 7.33333C9.47341 7.33333 10.6673 6.13943 10.6673 4.66667C10.6673 3.19391 9.47341 2 8.00065 2C6.52789 2 5.33398 3.19391 5.33398 4.66667C5.33398 6.13943 6.52789 7.33333 8.00065 7.33333Z"
+                    stroke="#E5E7EB"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="tel"
+                  class="phoneInput"
+                  required
+                  placeholder="+38 (XXX) XXX-XX-XX"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M14.6669 11.28V13.28C14.6677 13.4657 14.6297 13.6494 14.5553 13.8195C14.4809 13.9897 14.3718 14.1424 14.235 14.2679C14.0982 14.3934 13.9367 14.489 13.7608 14.5485C13.5849 14.6079 13.3985 14.63 13.2136 14.6133C11.1622 14.3904 9.19161 13.6894 7.46028 12.5667C5.8495 11.5431 4.48384 10.1774 3.46028 8.56665C2.3336 6.82745 1.63244 4.84731 1.41361 2.78665C1.39695 2.60229 1.41886 2.41649 1.47795 2.24107C1.53703 2.06564 1.63199 1.90444 1.75679 1.76773C1.88159 1.63102 2.03348 1.52179 2.20281 1.447C2.37213 1.37221 2.55517 1.33349 2.74028 1.33332H4.74028C5.06382 1.33013 5.37748 1.4447 5.62279 1.65567C5.8681 1.86664 6.02833 2.15961 6.07361 2.47998C6.15803 3.12003 6.31458 3.74847 6.54028 4.35332C6.62998 4.59193 6.64939 4.85126 6.59622 5.10057C6.54305 5.34988 6.41952 5.57872 6.24028 5.75998L5.39361 6.60665C6.34265 8.27568 7.72458 9.65761 9.39361 10.6067L10.2403 9.75998C10.4215 9.58074 10.6504 9.45722 10.8997 9.40405C11.149 9.35088 11.4083 9.37029 11.6469 9.45998C12.2518 9.68568 12.8802 9.84224 13.5203 9.92665C13.8441 9.97234 14.1399 10.1355 14.3513 10.385C14.5627 10.6345 14.6751 10.953 14.6669 11.28Z"
+                    stroke="#E5E7EB"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="input-wrapper">
+                <input
+                  id="email"
+                  class="input"
+                  autocomplete="off"
+                  type="text"
+                  placeholder="Email"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M2.66732 2.66675H13.334C14.0673 2.66675 14.6673 3.26675 14.6673 4.00008V12.0001C14.6673 12.7334 14.0673 13.3334 13.334 13.3334H2.66732C1.93398 13.3334 1.33398 12.7334 1.33398 12.0001V4.00008C1.33398 3.26675 1.93398 2.66675 2.66732 2.66675Z"
+                    stroke="#E5E7EB"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6673 4L8.00065 8.66667L1.33398 4"
+                    stroke="#E5E7EB"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="input-wrapper">
+                <input type="text" placeholder="Повідомлення" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M14 10C14 10.3536 13.8595 10.6928 13.6095 10.9428C13.3594 11.1929 13.0203 11.3333 12.6667 11.3333H4.66667L2 14V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V10Z"
+                    stroke="#E5E7EB"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <button class="btn white" type="submit">
+                Залишити запит
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="19"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                >
+                  <path
+                    d="M4.45898 9.5H15.5423"
+                    stroke="#111827"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 3.95825L15.5417 9.49992L10 15.0416"
+                    stroke="#111827"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
+    </section>
+    <footer class="footer">
+      <div class="body">
+        <div class="container">
+          <div class="wrapper">
+            <div class="col">
+              <a href="index.html" class="logo">
+                <img src="./img/logoWhite.svg" alt="" />
+              </a>
+            </div>
+
+            <div class="col">
+              <p class="title_18">Соціальні мережі</p>
+              <div class="soc-list">
+                <a href="#" class="soc-item">
+                  <img src="./img/facebook.svg" alt="" />
+                </a>
+                <a href="#" class="soc-item">
+                  <img src="./img/tiktok.svg" alt="" />
+                </a>
+                <a href="#" class="soc-item">
+                  <img src="./img/instagram.svg" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="col">
+              <p class="title_18">Навігація</p>
+              <div class="footer-nav list">
+                <a href="index.html" class="footer-nav_link">Головна</a
+                ><a href="activity.html" class="footer-nav_link">Діяльність</a
+                ><a href="partners.html" class="footer-nav_link">Партнери</a
+                ><a href="news.html" class="footer-nav_link">Новини</a>
+                <a href="contacts.html" class="footer-nav_link">Контакти</a>
+              </div>
+            </div>
+            <div class="col">
+              <p class="title_18">Контакти</p>
+              <div class="contact-list list">
+                <a href="tel:7987654654" class="contact-item"
+                  ><img src="./img/phone.svg" alt="" /> +38 (011) 111-11-11</a
+                >
+                <a href="mailto:test@test.com" class="contact-item"
+                  ><img src="./img/mail.svg" alt="" /> test@test.com</a
+                >
+                <a href="#" class="contact-item"
+                  ><img src="./img/pin.svg" alt="" />79008, Україна, місто
+                  Львів</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.68481537332!2d23.92983575431388!3d49.83265984475226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1743512252846!5m2!1suk!2sua"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
       <div class="copyright">
         © <span class="copyright-year"></span> Агенція справедливої
         трансформації. Усі права захищено.
       </div>
     </footer>
+
     <script src="./js/jquery.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/just-validate.production.min.js"></script>

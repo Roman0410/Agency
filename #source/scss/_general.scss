@@ -10,7 +10,7 @@ html {
   }
 }
 body {
-  font-family: "e-Ukraine", sans-serif;
+  font-family: "e-Ukraine";
   margin: 0;
   overflow-x: hidden;
   background-color: #fff;
@@ -47,7 +47,7 @@ img {
   display: block;
 }
 .container {
-  max-width: 1424px;
+  max-width: 1524px;
   width: 100%;
   padding: 0px 56px;
   margin: 0 auto;
@@ -70,7 +70,7 @@ section {
 }
 
 .btn {
-  background-color: #000000;
+  background-color: var(--accent-color2);
   color: #fff;
   font-size: 16px;
   font-style: normal;
