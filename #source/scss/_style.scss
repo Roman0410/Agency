@@ -833,6 +833,12 @@
     display: flex;
     flex-direction: column;
     height: auto;
+    @media screen and (max-width: 1024px) {
+      width: calc((100% - 48px) / 2);
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
   .img-card {
     position: relative;
@@ -840,6 +846,10 @@
     height: 250px;
     border-radius: 12px;
     overflow: hidden;
+    @media screen and (max-width: 768px) {
+      height: 180px;
+      min-height: 180px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -861,6 +871,9 @@
   .events-title {
     font-size: 20px;
     color: #fff;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
   }
   .info {
     margin-top: 16px;
@@ -877,6 +890,10 @@
       font-size: 14px;
       border-radius: 12px;
       align-self: center;
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+      }
     }
   }
   .text_16 {
@@ -939,5 +956,90 @@
     font-size: 16px;
     font-weight: 300;
     transition: all 0.1s linear;
+  }
+}
+.error {
+  background: var(--gradient);
+  height: 100vh;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 1024px) {
+    }
+  }
+  .logo {
+    width: 200px;
+    @media screen and (max-width: 1024px) {
+      width: 150px;
+    }
+  }
+  .title_404 {
+    font-size: 200px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 32px 0;
+    @media screen and (max-width: 1024px) {
+      font-size: 100px;
+    }
+  }
+  .text_32 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 16px;
+    @media screen and (max-width: 1024px) {
+      font-size: 24px;
+    }
+  }
+  .text_18 {
+    font-weight: 400;
+    color: #fff;
+  }
+  .btn {
+    max-width: 250px;
+    margin-top: 40px;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+.open-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  section {
+    padding: 20px 0;
+  }
+  h2 {
+    margin-bottom: 16px;
+  }
+  h3 {
+    margin: 8px 0;
+  }
+  p {
+    line-height: 1.5;
+  }
+  ul {
+    list-style: disc;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .imgCard {
+    height: 500px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 24px 0;
+    @media screen and (max-width: 1024px) {
+      height: 300px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
