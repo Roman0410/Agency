@@ -154,16 +154,19 @@
   .nav-item {
     height: 100%;
     position: relative;
-    &:hover {
-      .sub-menu {
-        display: block;
-      }
-      @media screen and (min-width: 1025px) {
-        .nav-link img {
-          transform: rotate(180deg);
+    @media screen and (min-width: 1025px) {
+      &:hover {
+        .sub-menu {
+          display: block;
+        }
+        @media screen and (min-width: 1025px) {
+          .nav-link img {
+            transform: rotate(180deg);
+          }
         }
       }
     }
+
     .sub-menu {
       position: absolute;
       width: 350px;

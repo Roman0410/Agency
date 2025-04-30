@@ -22,16 +22,18 @@ $(".header .search_btn").click(function () {
 $(".search-banner .close").click(function () {
   $(".search-banner").removeClass("open");
 });
-
+if ($(window).width() < 1024) {
+  $(".nav-item").click(function () {
+    $(this).find(".sub-menu").slideToggle();
+    $(this).find("svg").toggleClass("rotate");
+  });
+}
 $(document).ready(function () {
   $(".filter-item").on("click", function () {
     let filter = $(this).data("filter");
 
-    // Підсвічування активного фільтра
     $(".filter-item").removeClass("open");
     $(this).addClass("open");
-
-    // Фільтрація елементів
     if (filter === "all") {
       $(".news-item").show();
     } else {
